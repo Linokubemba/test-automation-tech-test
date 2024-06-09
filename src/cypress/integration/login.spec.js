@@ -31,6 +31,13 @@ describe('Login form', () => {
     cy.get('.errorMsg').should('contain', 'Connection error') // Invalid password.
   })
 
+  it('disables the login button if an error is raised', () => {
+    cy.get('[name="username"]').type('test')
+    cy.get('[name="password"]').type('wrongPassword')
+    cy.get('[type="submit"]').click()
+    cy.get('[type="submit"]').should('be.disabled')
+  })
+
   it('redirects to the forgot password page', () => {
     cy.get('[href="/forgot-password"]').click()
     cy.url().should('include', '/forgot-password')
