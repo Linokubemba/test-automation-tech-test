@@ -28,6 +28,11 @@ password : liveTest
 2. Install Cypress and write a test to check if the login form is working properly
 3. Suggest improvement on the login form
 
+Suggestions :
+    - Use the HTML5 "required" attribute for the login and password fields.
+    - Be more specific about the type of missing field.
+    - Be more specific about the incorrect field.
+
 
 Login form specifications : 
 * It must raise an error if one the fields is empty, and displays a message
