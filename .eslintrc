@@ -1,7 +1,7 @@
 {
   "extends": ["airbnb"],
   "plugins": ["prettier"],
-  "parser": "react-scripts/node_modules/babel-eslint",
+  "parser": "react-scripts/node_modules/@babel/eslint-parser",
   "env": {
     "browser": true,
     "node": true,
